@@ -56,14 +56,22 @@ li {
 }
 
 .nav__link--anchor {
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
 }
 
 .nav__link--anchor-primary {
     background-color: #fff;
-    padding: 8px 20px;
+    padding: 12px 32px;
     border-radius: 50px;
+    cursor: pointer;
+}
 
+.nav__link--anchor:hover {
+    background: #ff328f;
+    color: #fff;
+    transition: all 300ms ease;
 }
 
 .nav__header {
@@ -86,6 +94,12 @@ li {
     align-items: center;
 }
 
+.input__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+}
+
 .input {
     font-size: 20px;
     border: 1px solid;
@@ -95,4 +109,37 @@ li {
     height: 60px;
     width: 100%;
     max-width: 800px;
+    padding-left: 20px
+}
+
+.magnify {
+   
+}
+
+.magnify:hover {
+    color: #ff328f;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.input__wrapper i {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    transform: translateY(-50%);
+}
+
+
+.movies {
+    position: relative;
+}
+
+.movies::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
