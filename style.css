@@ -144,10 +144,6 @@ li {
     position: relative;
 }
 
-.movies {
-    width: 100%;
-    display: block;
-}
 
 .overlay::after {
     content: "";

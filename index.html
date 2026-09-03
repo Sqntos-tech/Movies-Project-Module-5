@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/26d9ba7d24.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
     </link>
 </head>
 
@@ -38,7 +39,7 @@
                 <div class="nav__header">
                     <h1 class="section__title">Browse our movies</h1>
                     <div class="input__wrapper">
-                        <input type="text" placeholder="Search by Name and fine the best..." class="input">
+                        <input type="text" placeholder="Search by Name and fine the best..." class="input" onchange="onSearchChange(event)">
                         <i class="fa-solid fa-magnifying-glass purple magnify"></i>
                     </div>
 
