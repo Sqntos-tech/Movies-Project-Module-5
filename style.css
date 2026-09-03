@@ -18,9 +18,13 @@ nav {
     flex-direction: column;
     height: 326px;
     padding: 40px 15px;
-    background-color: grey;
     align-items: center;
     position: relative;
+
+    background-image: 
+        linear-gradient(rgba(20, 10, 50, 0.7), rgba(20, 10, 50, 0.7)),
+        url(https://wallpapercave.com/wp/wp15528799.jpg);
+    background-size: cover;
 }
 
 .nav__bar {
@@ -76,6 +80,7 @@ li {
 
 .nav__header {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +118,7 @@ li {
 }
 
 .magnify {
-   
+    font-size: 24px;
 }
 
 .magnify:hover {
@@ -130,11 +135,16 @@ li {
 }
 
 
-.movies {
+.overlay {
     position: relative;
 }
 
-.movies::after {
+.movies {
+    width: 100%;
+    display: block;
+}
+
+.overlay::after {
     content: "";
     position: absolute;
     top: 0;
@@ -142,4 +152,45 @@ li {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.search__info {
+    font-size: 26px;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.content__wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 40px;
+}
+
+
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
