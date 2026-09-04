@@ -178,6 +178,19 @@ li {
     display: flex;
 }
 
+.search__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.movie {
+    padding: 20px;
+    flex-wrap: wrap;
+    color: white;
+    flex-wrap: wrap;
+}
+
 .movie__loading {
     display: flex;
     align-items: center;
@@ -205,12 +218,6 @@ li {
     }
 }
 
-.movie {
-    padding: 20px;
-    flex-wrap: wrap;
-    color: white;
-    flex-wrap: wrap;
-}
 
 .landing {
     background-color: #111d31;
@@ -264,5 +271,5 @@ li {
 
 .searchName {
     color: white;
-    margin: 0 auto;
+    margin-top: 40px;
 }

@@ -39,7 +39,8 @@
                 <div class="nav__header">
                     <h1 class="section__title">Browse our movies</h1>
                     <div class="input__wrapper">
-                        <input type="text" placeholder="Search by Name and fine the best..." class="input" onchange="onSearchChange(event)">
+                        <input type="text" placeholder="Search by Name and fine the best..." class="input"
+                            onchange="onSearchChange(event)">
                         <i class="fa-solid fa-magnifying-glass purple magnify"></i>
                     </div>
 
@@ -50,10 +51,12 @@
 
     <section id class="search">
         <div class="content__wrapper">
-            <h1 class="search__info">Search results:</h1>
-            <span class="search-term"><span class="searchName"></span></span>
+            <div class="search__header">
+                <h1 class="search__info">Search results:</h1>
+                <span class="search-term"><span class="searchName"></span></span>
+            </div>
         </div>
-            
+
         <div class="movie movie__loading">
             <i class="fas fa-spinner"></i>
         </div>
