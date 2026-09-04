@@ -8,10 +8,10 @@ async function getMovies(searchTerm) {
     console.log(data.Search)
     movieWrapper.innerHTML = data.Search.map((movie) => {
         return `<div class='movie'>
-        <img src='${movie.Poster}' alt="Poster" />
-        <h2>${movie.Title}</h2>
-        <h4>${movie.Year}</h4>
-        <button>Learn more</button>
+        <img src='${movie.Poster}' class="movie__img" alt="Poster" />
+        <h2 class="movie__title">${movie.Title}</h2>
+        <h4 class="movie__year">${movie.Year}</h4>
+        <button class="movie__btn">Learn more</button>
         </div>`
     })
 }
