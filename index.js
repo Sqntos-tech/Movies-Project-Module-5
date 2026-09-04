@@ -2,13 +2,13 @@ const movieWrapper = document.querySelector(".movie")
 const nameWrapper = document.querySelector(".searchName")
 
 async function getMovies(searchTerm) {
-    document.body.classList += ' movie__loading'
+    movieWrapper.classList.add("movie__loading")
     const response = await fetch(
-        `http://www.omdbapi.com/?apikey=75b38caf&s=${searchTerm}`
+        `https://www.omdbapi.com/?apikey=75b38caf&s=${searchTerm}`
     );
-    document.body.classList.remove('movie__loading')
     nameWrapper.innerHTML = searchTerm
     const data = await response.json();
+    movieWrapper.classList.remove("movie__loading")
     console.log(data.Search)
     movieWrapper.innerHTML = data.Search.map((movie) => {
         return `<div class='movie'>
