@@ -2,9 +2,11 @@ const movieWrapper = document.querySelector(".movie")
 const nameWrapper = document.querySelector(".searchName")
 
 async function getMovies(searchTerm) {
+    document.body.classList += ' movie__loading'
     const response = await fetch(
         `http://www.omdbapi.com/?apikey=75b38caf&s=${searchTerm}`
     );
+    document.body.classList.remove('movie__loading')
     nameWrapper.innerHTML = searchTerm
     const data = await response.json();
     console.log(data.Search)
@@ -17,7 +19,6 @@ async function getMovies(searchTerm) {
         </div>`
     }) .slice(0, 6).join("")
 }
-
 
 function onSearchChange(event) {
     console.log(event.target.value); 

@@ -201,6 +201,13 @@ li {
     color: #6030b1;
 }
 
+.movie__loading--spinner {
+    display: none !important;
+}
+
+.movie__loading .movie__loading--spinner {
+    display: block !important;
+}
 
 .fa-spinner {
     animation: rotate 600ms infinite linear;
