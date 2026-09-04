@@ -163,7 +163,6 @@ li {
     padding: 20px;
     color: #fff;
     font-family: sans-serif;
-    margin-top: 40px;
 }
 
 .search {
@@ -182,6 +181,7 @@ li {
     display: flex;
     align-items: center;
     gap: 12px;
+    margin-top: 40px;
 }
 
 .movie {
@@ -271,5 +271,4 @@ li {
 
 .searchName {
     color: white;
-    margin-top: 40px;
 }
