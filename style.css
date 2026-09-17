@@ -312,7 +312,7 @@ li {
 }
 
 
-/* Smart phones  */
+/* Tablets  */
 @media (max-width: 768px) {
     .nav__bar {
         width: 100%;
@@ -331,5 +331,25 @@ li {
 
     .movie {
         width: 50%;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+    .nav__link {
+        display: none;
+    }
+
+    .nav__link:nth-child(1) {
+        display: block;
+    }
+    
+    .section__title {
+        font-size: 30px;
+    }
+
+    .movie {
+        width: 100%;
     }
 }
