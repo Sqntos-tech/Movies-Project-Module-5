@@ -337,12 +337,9 @@ li {
 
 /* Small phones */
 @media (max-width: 480px) {
-    .nav__link {
+    .nav__link--list li:nth-child(1),
+    .nav__link--list li:nth-child(2) {
         display: none;
-    }
-
-    .nav__link:nth-child(1) {
-        display: block;
     }
     
     .section__title {
