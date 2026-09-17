@@ -312,6 +312,7 @@ li {
 }
 
 
+/* Smart phones  */
 @media (max-width: 768px) {
     .nav__bar {
         width: 100%;
