@@ -184,10 +184,10 @@ li {
     margin-top: 40px;
 }
 
-.movie {
+.movies {
     padding: 20px;
-    flex-wrap: wrap;
     color: white;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -228,6 +228,12 @@ li {
 
 .landing {
     background-color: #111d31;
+}
+
+.movie {
+    width: 33.33%;
+    padding: 20px;
+    color: white;
 }
 
 .movie__img {

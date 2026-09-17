@@ -1,4 +1,4 @@
-const movieWrapper = document.querySelector(".movie")
+const movieWrapper = document.querySelector(".movies")
 const nameWrapper = document.querySelector(".searchName")
 
 async function getMovies(searchTerm) {
