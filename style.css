@@ -298,5 +298,15 @@ li {
 }
 
 .searchName {
-    color: white;
+    color: #fff;
+    opacity: 0.6;
+    letter-spacing: 0.3em;
+}
+
+.searchName::before {
+    content: "“"
+}
+
+.searchName::after {
+    content: "”"
 }
