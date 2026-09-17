@@ -13,6 +13,8 @@ async function getMovies(searchTerm) {
     );
 
     const data = await response.json();
+    await new Promise(resolve => setTimeout(resolve, 800));
+
     nameWrapper.innerHTML = searchTerm
 
     movieWrapper.classList.remove("movie__loading")
